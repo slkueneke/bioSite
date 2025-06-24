@@ -1,0 +1,329 @@
+/*
+  Student Name: Shannon Kueneke
+  File Name: assets/css/styles.css
+  Date: June 13, 2025
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+ul,
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* global styles */
+h1,
+h2,
+nav a,
+nav span { /* weight 300 - 700 */
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  color: #2e1605;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+p,
+a,
+span,
+h3,
+h4,
+h5,
+h6,
+li { /* weight 100 - 900 */
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.2em;
+  font-weight:300;
+  color:#2e1605;
+}
+
+p {
+  line-height:1.3em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  font-weight:bold;
+}
+
+header {
+  padding:1em 1.5em;
+}
+
+main section > *,
+header section,
+nav {
+  max-width: 1440px;
+  margin:0 auto;
+}
+
+footer {
+  padding: 0.7em;
+}
+
+.script {
+  font-family: "Passions Conflict", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.script2 {
+  font-family: "Petemoss", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.desktopOnly {
+  display: none;
+}
+
+/* nav */
+nav {
+  width: 98%;
+  background-color: #ffb5a7;
+  border-radius: 5em;
+  margin-top:1em;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  border:3px solid #fff;
+  z-index:99;
+}
+
+#logo {
+  border-radius: 100%;
+  height: 3em;
+  width: 3em;
+  background: #f8edeb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2em;
+}
+
+#logo div {
+  position: relative;
+  top:-1em;
+  left:0.3em;
+}
+
+#logo span:not(.script) {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#logo .script {
+  font-size:4.5em;
+  position: relative;
+  top:-0.16em;
+  left:0.06em;
+}
+
+nav.collapsed ul {
+  display: none;
+}
+
+nav.open ul {
+  display: block;
+}
+
+nav img.mobileOnly {
+  max-width:3em;
+  margin-left: 1em;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/*TODO: hide hamburger when menu open*/
+
+nav li {
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+/* TODO: color of border */
+nav li:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
+
+nav li:last-of-type {
+  font-size: 2em;
+  padding-bottom: 0;
+}
+
+nav li a {
+  text-decoration:none;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+
+nav li a.active {
+  font-weight:bold;
+}
+
+nav table tbody {
+  float:right;
+  margin-right:2em;
+}
+
+nav td {
+  padding:1em 2em;
+}
+
+/* header */
+header {
+  background-color: #f8edeb;
+  clear:both;
+}
+
+header h1 {
+  font-size:2.5em;
+  font-weight:bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top:-1.5em;
+}
+
+/* homepage header styles */
+#home header {
+  padding-top:0;
+}
+
+#home header h1 {
+  font-size: 3.5em;
+}
+
+#home header h1 span {
+  display: block;
+  text-transform: lowercase;
+  font-size: 3em;
+  position: relative;
+  top:48px;
+  color: #bf614f;
+}
+
+#photoBg {
+  background: url(../images/selfie5.jpeg);
+  height: 26em;
+  width:93%;
+  margin:0 auto;
+  border-radius: 0 0 6em 6em;
+  background-size: cover;
+  background-position: center;
+  box-shadow: #535252 2px 3px 6px;
+}
+
+/* main */
+main section {
+  padding: 2.5em 3em;
+}
+
+main section:first-of-type {
+  background-color: #fcd5ce;
+}
+
+main section h2 {
+  padding-bottom: 1em;
+}
+
+#accomplishments {
+  background-color: #fec89a;
+}
+
+main p {
+  padding-bottom: 2em;
+}
+
+main section p:last-of-type {
+  padding-bottom: 0;
+}
+
+/* footer */
+footer {
+  background-color: #f8edeb;
+}
+
+footer p {
+  text-align: center;
+  font-size:0.8em;
+}
+
+/* tablet+ */
+@media all and (min-width: 768px) {
+
+  .desktopOnly {
+    display: block;
+  }
+
+  .mobileOnly {
+    display: none;
+  }
+
+  #home header {
+    padding: 7em 3em 2em;
+  }
+
+  header section {
+    display: flex;
+    flex-wrap:nowrap;
+  }
+
+  #home header h1 {
+    text-align: right;
+    font-size:4em;
+    align-self:end;
+    width:45%;
+    margin-top:unset;
+  }
+
+  #home header h1 span {
+    top:53px;
+  }
+
+  #photoBg {
+    order:2;
+    border-radius: 3em;
+    height:unset;
+    width: 50%;
+    margin-left:2em;
+  }
+
+}
+
+/* small laptop+ */
+@media all and (min-width:1024px) {
+  #home header h1 {
+      font-size: 5em;
+  }
+
+}
+/* large laptop+ */
+@media all and (min-width:1440px) {
+  #home header h1 {
+      width: 38%;
+    }
+}
+
