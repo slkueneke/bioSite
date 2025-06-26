@@ -65,19 +65,11 @@ a:hover {
   font-weight:bold;
 }
 
-header {
-  padding:1em 1.5em;
-}
-
 main section > *,
 header section,
 nav {
   max-width: 1440px;
   margin:0 auto;
-}
-
-footer {
-  padding: 0.7em;
 }
 
 .script {
@@ -96,6 +88,13 @@ footer {
   display: none;
 }
 
+/* header */
+header {
+  position: fixed;
+  z-index: 99;
+  padding:1em 1.5em;
+
+}
 /* nav */
 nav {
   width: 98%;
@@ -106,7 +105,6 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   border:3px solid #fff;
-  z-index:99;
 }
 
 #logo {
@@ -273,6 +271,7 @@ main section p:last-of-type {
 /* footer */
 footer {
   background-color: #fff;
+  padding: 0.7em;
 }
 
 footer p {
