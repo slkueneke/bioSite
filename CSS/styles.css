@@ -195,7 +195,7 @@ nav td {
 
 /* header */
 header {
-  background-color: #f8edeb;
+  background-color: #fff;
   clear:both;
 }
 
@@ -241,8 +241,9 @@ main section {
   padding: 2.5em 3em;
 }
 
-main section:first-of-type {
-  background-color: #fcd5ce;
+/*main section:first-of-type {*/
+#goals {
+  background-color:#f8edeb;
 }
 
 main section h2 {
@@ -250,7 +251,7 @@ main section h2 {
 }
 
 #accomplishments {
-  background-color: #fec89a;
+  background-color: #fcd5ce;
 }
 
 main p {
@@ -263,7 +264,7 @@ main section p:last-of-type {
 
 /* footer */
 footer {
-  background-color: #f8edeb;
+  background-color: #fff;
 }
 
 footer p {
