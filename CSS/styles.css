@@ -227,15 +227,15 @@ main section p:last-of-type {
   margin-top:-1.5em;
 }
 
-#home header {
+#home #banner {
   padding-top:0;
 }
 
-#home header h1 {
+#home #banner h1 {
   font-size: 3.5em;
 }
 
-#home header h1 span {
+#home #banner h1 span {
   display: block;
   text-transform: lowercase;
   font-size: 3em;
