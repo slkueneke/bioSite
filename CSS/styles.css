@@ -291,16 +291,12 @@ footer p {
     display: none;
   }
 
-  #home header {
-    padding: 7em 3em 2em;
-  }
-
   header section {
     display: flex;
     flex-wrap:nowrap;
   }
 
-  #home header h1 {
+  #home #banner h1 {
     text-align: right;
     font-size:4em;
     align-self:end;
@@ -308,7 +304,7 @@ footer p {
     margin-top:unset;
   }
 
-  #home header h1 span {
+  #home #banner h1 span {
     top:53px;
   }
 
@@ -324,14 +320,14 @@ footer p {
 
 /* small laptop+ */
 @media all and (min-width:1024px) {
-  #home header h1 {
+  #home #banner h1 {
       font-size: 5em;
   }
 
 }
 /* large laptop+ */
 @media all and (min-width:1440px) {
-  #home header h1 {
+  #home #banner h1 {
       width: 38%;
     }
 }
