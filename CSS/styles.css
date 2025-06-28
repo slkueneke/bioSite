@@ -216,17 +216,25 @@ main section p:last-of-type {
   clear:both;
 }
 
-/* homepage banner styles */
+#home #banner {
+  padding:0;
+  display:inline-flex;
+  flex-wrap:nowrap;
+  margin-top: 8em;
+  width:100%;
+}
+
+#home #banner > div {
+  margin:0;
+  position: relative;
+}
+
 #home #banner h1 {
   font-size:2.5em;
   font-weight:bold;
   text-transform: uppercase;
   text-align: center;
   margin-top:-1.5em;
-}
-
-#home #banner {
-  padding-top:0;
 }
 
 #home #banner h1 {
@@ -243,19 +251,23 @@ main section p:last-of-type {
 }
 
 .photoBubble {
-  height: 26em;
-  width:93%;
-  margin:0 auto;
-  border-radius: 0 0 6em 6em;
-  background-size: cover;
-  background-position: center;
   box-shadow: #535252 2px 3px 6px;
+  background-position: center;
+  background-size: cover;
+  display:inline-block;
 }
 
 #photoBg {
-  background: url(../images/selfie5.jpeg);
+  background-image: url(../images/selfie5.jpeg);
 }
 
+#photoBg2 {
+  background-image: url(../images/clem.jpeg);
+}
+
+#photoBg3 {
+  background-image: url(../images/kid.jpeg);
+}
 
 /*main section:first-of-type {*/
 #goals {
@@ -290,7 +302,7 @@ footer p {
     display: none;
   }
 
-  header section {
+  #banner section {
     display: flex;
     flex-wrap:nowrap;
   }
@@ -299,20 +311,37 @@ footer p {
     text-align: right;
     font-size:4em;
     align-self:end;
-    width:45%;
-    margin-top:unset;
+    margin:0 3em;
   }
 
   #home #banner h1 span {
     top:53px;
   }
 
-  #photoBg {
+  #home #banner > div {
     order:2;
-    border-radius: 3em;
-    height:unset;
-    width: 50%;
-    margin-left:2em;
+  }
+
+  #home #banner .photoBubble {
+    position: absolute;
+  }
+  
+  #photoBg {
+    height:20em;
+    width:20em;
+    border-radius: 20em;
+  }
+
+  #photoBg2 {
+    height:15em;
+    width:15em;
+    border-radius: 15em;
+  }
+
+  #photoBg3 {
+    height:12em;
+    width:12em;
+    border-radius: 12em;
   }
 
 }
