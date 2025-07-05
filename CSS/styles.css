@@ -23,10 +23,22 @@ p {
 }
 
 /* global styles */
+body,
+nav {
+  max-width: 1600px;
+  min-width: 425px;
+  margin: 0 auto;
+}
+
+nav {
+  min-width: 380px;
+}
+
 h1,
 h2,
 nav a,
-nav span { /* weight 300 - 700 */
+nav span {
+  /* weight 300 - 700 */
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   color: #2e1605;
@@ -44,16 +56,17 @@ h3,
 h4,
 h5,
 h6,
-li { /* weight 100 - 900 */
+li {
+  /* weight 100 - 900 */
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.2em;
-  font-weight:300;
-  color:#2e1605;
+  font-weight: 300;
+  color: #2e1605;
 }
 
 p {
-  line-height:1.3em;
+  line-height: 1.3em;
 }
 
 a {
@@ -62,14 +75,13 @@ a {
 }
 
 a:hover {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 main section > *,
 header section,
 nav {
-  max-width: 1440px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .script {
@@ -78,33 +90,38 @@ nav {
   font-style: normal;
 }
 
-.script2 {
-  font-family: "Petemoss", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .desktopOnly {
   display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.darkPink {
+  color: #bf614f;
+}
+
+.center {
+  text-align: center;
 }
 
 /* header */
 header {
   position: fixed;
   z-index: 99;
-  padding:1em 1.5em;
-
+  padding: 1em 1.5em;
 }
 /* nav */
 nav {
   width: 98%;
   background-color: #ffb5a7;
   border-radius: 5em;
-  margin-top:1em;
+  margin-top: 1em;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  border:3px solid #fff;
+  border: 3px solid #fff;
 }
 
 #logo {
@@ -120,8 +137,8 @@ nav {
 
 #logo div {
   position: relative;
-  top:-1em;
-  left:0.3em;
+  top: -1em;
+  left: 0.3em;
 }
 
 #logo span:not(.script) {
@@ -130,10 +147,10 @@ nav {
 }
 
 #logo .script {
-  font-size:4.5em;
+  font-size: 4.5em;
   position: relative;
-  top:-0.16em;
-  left:0.06em;
+  top: -0.16em;
+  left: 0.06em;
 }
 
 nav.collapsed ul {
@@ -145,7 +162,7 @@ nav.open ul {
 }
 
 nav img.mobileOnly {
-  max-width:3em;
+  max-width: 3em;
   margin-left: 1em;
   vertical-align: middle;
 }
@@ -162,35 +179,37 @@ nav li {
   margin: 0 auto;
 }
 /* TODO: color of border */
+
+/* THIS IS ONE PSEUDO CLASS NOT USED IN BOOK */
 nav li:not(:last-of-type) {
   border-bottom: 1px solid black;
 }
 
+/* THIS IS ONE PSEUDO CLASS NOT USED IN BOOK */
 nav li:last-of-type {
   font-size: 2em;
   padding-bottom: 0;
 }
 
 nav li a {
-  text-decoration:none;
+  text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   display: block;
 }
 
 nav li a.active {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 nav table tbody {
-  float:right;
-  margin-right:2em;
+  float: right;
+  margin-right: 2em;
 }
 
 nav td {
-  padding:1em 2em;
+  padding: 1em 2em;
 }
-
 
 /* main */
 main section {
@@ -205,36 +224,40 @@ main p {
   padding-bottom: 2em;
 }
 
+main img {
+  box-shadow: #535252 2px 3px 6px;
+  border-radius: 5em;
+  max-width: 20em;
+}
+
 main section p:last-of-type {
   padding-bottom: 0;
 }
 
-
 /* banner */
 #banner {
   background-color: #fff;
-  clear:both;
+  clear: both;
 }
 
 #home #banner {
-  padding:0;
-  display:inline-flex;
-  flex-wrap:nowrap;
-  margin-top: 8em;
-  width:100%;
+  padding: 0;
+  padding-top: 8em;
+  width: 100%;
 }
 
 #home #banner > div {
-  margin:0;
+  margin: 0;
   position: relative;
+  width: 100%;
 }
 
 #home #banner h1 {
-  font-size:2.5em;
-  font-weight:bold;
+  font-size: 2.5em;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top:-1.5em;
+  margin-top: -1.5em;
 }
 
 #home #banner h1 {
@@ -246,39 +269,87 @@ main section p:last-of-type {
   text-transform: lowercase;
   font-size: 3em;
   position: relative;
-  top:48px;
-  color: #bf614f;
+  top: 48px;
 }
 
 .photoBubble {
   box-shadow: #535252 2px 3px 6px;
   background-position: center;
   background-size: cover;
-  display:inline-block;
+  display: inline-block;
+  border: 4px solid #fcd5c5;
+  position: relative;
 }
 
 #photoBg {
   background-image: url(../images/selfie5.jpeg);
+  background-size: 183%;
+  position: absolute;
+  height: 12em;
+  width: 12em;
+  border-radius: 12em;
+  top: -11%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #photoBg2 {
   background-image: url(../images/clem.jpeg);
+  height: 8em;
+  width: 8em;
+  border-radius: 8em;
+  right: -36%;
+  bottom: -3em;
 }
 
 #photoBg3 {
   background-image: url(../images/kid.jpeg);
+  height: 7em;
+  width: 7em;
+  border-radius: 7em;
+  z-index: 9;
+  left: 4%;
+  bottom: -2em;
 }
 
 /*main section:first-of-type {*/
 #goals {
-  background-color:#f8edeb;
+  background-color: #f8edeb;
 }
 
 #accomplishments {
   background-color: #fcd5ce;
 }
 
+aside {
+  background: #fff;
+  padding: 1em 3em 2em 3em;
+  border-radius: 5em;
+}
 
+aside ul {
+  list-style: none;
+}
+
+aside ul li span {
+  font-size: 0.9em;
+}
+
+aside ul li {
+  margin: 1em 0;
+}
+
+aside span em {
+  padding-left: 1.5em;
+}
+
+aside h3 {
+  font-size: 4em;
+}
+
+.sectionContainer > div:first-of-type {
+  padding-bottom:2em;
+}
 
 /* footer */
 footer {
@@ -288,12 +359,11 @@ footer {
 
 footer p {
   text-align: center;
-  font-size:0.8em;
+  font-size: 0.8em;
 }
 
 /* tablet+ */
 @media all and (min-width: 768px) {
-
   .desktopOnly {
     display: block;
   }
@@ -302,61 +372,184 @@ footer p {
     display: none;
   }
 
+  #home #banner {
+    padding-top: 0;
+  }
+
   #banner section {
     display: flex;
-    flex-wrap:nowrap;
-  }
-
-  #home #banner h1 {
-    text-align: right;
-    font-size:4em;
-    align-self:end;
-    margin:0 3em;
-  }
-
-  #home #banner h1 span {
-    top:53px;
-  }
-
-  #home #banner > div {
-    order:2;
+    flex-wrap: nowrap;
   }
 
   #home #banner .photoBubble {
     position: absolute;
   }
-  
+
+  #home #banner h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    padding-left: 1em;
+  }
+
+  #home #banner h1 span {
+    top: 53px;
+  }
+
   #photoBg {
-    height:20em;
-    width:20em;
-    border-radius: 20em;
+    height: 11em;
+    width: 11em;
+    border-radius: 11em;
+    right: 3%;
+    top: 21%;
+    left: unset;
+    transform: unset;
   }
 
   #photoBg2 {
-    height:15em;
-    width:15em;
-    border-radius: 15em;
+    height: 9em;
+    width: 9em;
+    border-radius: 9em;
+    bottom: 0;
+    left: 5%;
   }
 
   #photoBg3 {
-    height:12em;
-    width:12em;
-    border-radius: 12em;
+    height: 7em;
+    width: 7em;
+    border-radius: 7em;
+    z-index: 9999;
+    top: 10%;
+    left: 22%;
   }
 
+  main section:not(#banner) {
+    padding: 2.5em 2em;
+  }
+
+  .sectionContainer {
+    display: inline-flex;
+  }
+
+  .text {
+    padding: 0 2em 0 0;
+  }
+
+  #accomplishments .text,
+  #accomplishments h2 {
+    text-align: right;
+  }
+
+  #accomplishments .text {
+    padding: 0 0 0 3em;
+  }
+
+  .facts aside {
+    min-width: 11em;
+    padding:1em 2em 2em;
+  }
+
+  .facts aside h3 {
+    font-size: 2.5em;
+  }
+
+  .facts aside li span {
+    font-size:0.8em;
+  }  
+
+  .sectionContainer > div:first-of-type {
+    padding-bottom:unset;
+  }
 }
 
 /* small laptop+ */
-@media all and (min-width:1024px) {
+@media all and (min-width: 1024px) {
   #home #banner h1 {
-      font-size: 5em;
+    font-size: 5em;
+  }
+  #photoBg {
+    height: 15em;
+    width: 15em;
+    border-radius: 15em;
+    right: 5%;
+    top: 5%;
+    background-size: cover;
+  }
+
+  #photoBg2 {
+    height: 12em;
+    width: 12em;
+    border-radius: 12em;
+  }
+
+  #photoBg3 {
+    height: 9em;
+    width: 9em;
+    border-radius: 9em;
+  }
+
+  .facts {
+    min-width: 33%;
+  }
+
+  .text {
+    padding: 0 4em 0 0;
+  }
+
+  .facts aside li span {
+    font-size: 0.9em;
+  }
+}
+/* large laptop+ */
+@media all and (min-width: 1440px) {
+  #photoBg {
+    height: 20em;
+    width: 20em;
+    border-radius: 20em;
+    /*right: 8em;
+      top: 0;*/
+  }
+
+  #photoBg2 {
+    height: 15em;
+    width: 15em;
+    border-radius: 15em;
+    /*bottom: 0;
+      left: 4em;*/
+  }
+
+  #photoBg3 {
+    height: 12em;
+    width: 12em;
+    border-radius: 12em;
+    /*top: 2em;
+      left: 20em;*/
+  }
+
+  .facts {
+    min-width: 30%;
   }
 
 }
-/* large laptop+ */
-@media all and (min-width:1440px) {
-  #home #banner h1 {
-      width: 38%;
-    }
+
+/* extra large desktop */
+@media screen and (min-width: 1601px) {
+  body {
+    background: linear-gradient(#f8edeb, #fcd5ce, #bf614f);
+    height: 100vh;
+  }
 }
 
+@media print {
+  header {
+    display: none;
+  }
+
+  section {
+    background-color: #fff;
+  }
+
+  .facts aside {
+    border:1px solid #000;
+  }
+}
