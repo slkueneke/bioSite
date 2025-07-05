@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!--
+  Student Name: Shannon Kueneke
+  File Name: template.html
+  Date: July 5, 2025
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Climate+Crisis&family=Comfortaa:wght@300..700&family=Passions+Conflict&family=Petemoss&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <title>Bio Site:</title>
+  </head>
+
+  <body id="home">
+
+    <!-- header -->
+    <header>
+
+      <!-- global navigation menu -->
+      <nav class="collapsed">
+        <!-- TODO: hamburger menu for mobile nav -->
+        <img
+          class="mobileOnly"
+          src="images/menu.png"
+          alt="open mobile navigation"
+        />
+
+        <!-- nav menu items for mobile -->
+        <ul class="mobileOnly">
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="hobby.html">Hobbies</a>
+          </li>
+
+          <li>
+            <a id="collapseMenu" href="javascript:;">&#8963;</a>
+          </li>
+        </ul>
+
+        <!-- nav menu items for tablet and dotcom -->
+        <div id="logo" class="desktopOnly">
+          <div>
+            <span class="script">f</span>
+            <span>d</span>
+          </div>
+        </div>
+
+        <table class="desktopOnly">
+          <tr>
+            <td>
+              
+              <a href="index.html">Home</a>
+            </td>
+
+            <td>
+              <a class="active" href="about.html">About</a>
+            </td>
+
+            <td>
+              <a href="hobby.html">Hobbies</a>
+            </td>
+          </tr>
+        </table>
+
+      </nav>
+
+    </header>
+
+    <!-- main content -->
+    <main>
+
+    </main>
+
+    <!-- footer content -->
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+
+    <!-- mobile nav expand/collapse functionality -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('nav img').addEventListener('click', function() {
+          document.querySelector('nav').classList.add('open');
+        });
+      });
+      document.getElementById('collapseMenu').addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('open');
+      });
+    </script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
 <!--
   Student Name: Shannon Kueneke
   File Name: index.html
-  Date: June 12, 2025
+  Date: July 5, 2025
 -->
 
 <html lang="en">
@@ -29,7 +29,7 @@
     <header>
 
       <!-- global navigation menu -->
-      <nav class="collapsed">
+      <nav>
         <!-- TODO: hamburger menu for mobile nav -->
         <img
           class="mobileOnly"
@@ -52,7 +52,7 @@
           </li>
 
           <li>
-            <a href="javascript:;">&#8963;</a>
+            <a id="collapseMenu" href="javascript:;">&#8963;</a>
           </li>
         </ul>
 
@@ -134,7 +134,7 @@
             </p>
           </div>
           
-          <div class="facts">
+          <div class="facts hidePrint">
             <!--TODO: style this out-->
             <aside>
               <h3 class="darkPink script center">quick facts</h3>
@@ -163,6 +163,34 @@
           </div>
         </div>
 
+      </section>
+
+      <section class="facts printOnly">
+        <!--TODO: style this out-->
+        <aside>
+          <h3 class="darkPink script center">quick facts</h3>
+          <ul>
+            
+            <li>
+              <span class="bold">Undergraduate Studies:</span>
+              <br>
+              <span>BS in Environmental Analysis and Design,<br><em>University of California Irvine</em></span>
+            </li>
+
+            <li>
+              <span class="bold">Graduate Studies:</span>
+              <br>
+              <span>MS in Non-Profit Management, <br><em>Columbia University</em></span>
+            </li>
+
+            <li>
+              <span class="bold">Dream Job:</span>
+              <br>
+              <span>President of a Non-Profit Foundation</span>
+            </li>
+            
+          </ul>
+        </aside>
       </section>
 
       <section id="accomplishments">
@@ -211,5 +239,18 @@
     <footer>
       <p>&copy; 2025</p>
     </footer>
+
+    <!-- mobile nav expand/collapse functionality -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('nav img').addEventListener('click', function() {
+          document.querySelector('nav').classList.add('open');
+        });
+      });
+      document.getElementById('collapseMenu').addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('open');
+      });
+    </script>
+
   </body>
 </html>
