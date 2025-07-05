@@ -40,7 +40,6 @@ nav a,
 nav span {
   /* weight 300 - 700 */
   font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
   color: #2e1605;
 }
 
@@ -59,7 +58,6 @@ h6,
 li {
   /* weight 100 - 900 */
   font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
   font-size: 1.2em;
   font-weight: 300;
   color: #2e1605;
