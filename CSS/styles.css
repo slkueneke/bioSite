@@ -30,9 +30,9 @@ nav {
   margin: 0 auto;
 }
 
-nav {
+/*nav {
   min-width: 380px;
-}
+}*/
 
 h1,
 h2,
@@ -184,15 +184,11 @@ nav ul {
   list-style: none;
 }
 
-/*TODO: hide hamburger when menu open*/
-
 nav li {
   padding: 20px 0;
   width: 90%;
   margin: 0 auto;
 }
-/* TODO: color of border */
-
 /* THIS IS ONE PSEUDO CLASS NOT USED IN BOOK */
 nav li:not(:last-of-type) {
   border-bottom: 1px solid black;
@@ -226,7 +222,7 @@ nav td {
 
 /* main */
 main section {
-  padding: 2.5em 3em;
+  padding: 2.5em 2em;
 }
 
 main section h2 {
@@ -254,7 +250,7 @@ main section p:last-of-type {
 
 #home #banner {
   padding: 0;
-  padding-top: 8em;
+  padding-top: 7em;
   width: 100%;
 }
 
@@ -269,7 +265,7 @@ main section p:last-of-type {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -1.5em;
+  margin-top: -1em;
 }
 
 #home #banner h1 {
@@ -307,10 +303,10 @@ main section p:last-of-type {
 
 #photoBg2 {
   background-image: url(../images/clem.jpeg);
-  height: 8em;
-  width: 8em;
-  border-radius: 8em;
-  right: -36%;
+  height: 7em;
+  width: 7em;
+  border-radius: 7em;
+  right: -37%;
   bottom: -3em;
 }
 
@@ -320,7 +316,7 @@ main section p:last-of-type {
   width: 7em;
   border-radius: 7em;
   z-index: 9;
-  left: 4%;
+  left: 1%;
   bottom: -2em;
 }
 
