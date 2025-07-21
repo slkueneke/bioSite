@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<!--
+  Student Name: Shannon Kueneke
+  File Name: hobby.html
+  Date: July 21, 2025
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&family=Climate+Crisis&family=Comfortaa:wght@300..700&family=Passions+Conflict&family=Petemoss&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="CSS/styles.css" >
+
+    <title>Bio Site: Hobbies</title>
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+
+      <!-- global navigation menu -->
+      <nav class="collapsed">
+        <img
+          class="mobileOnly"
+          src="images/menu.png"
+          alt="open mobile navigation"
+        >
+
+        <!-- nav menu items for mobile -->
+        <ul class="mobileOnly">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a class="active" href="hobby.html">Hobbies</a>
+          </li>
+
+          <li>
+            <a id="collapseMenu" href="javascript:;">&#8963;</a>
+          </li>
+        </ul>
+
+        <!-- nav menu items for tablet and dotcom -->
+        <div id="logo" class="desktopOnly">
+          <div>
+            <span class="script">f</span>
+            <span>d</span>
+          </div>
+        </div>
+
+        <table class="desktopOnly">
+          <tr>
+            <td>
+              
+              <a href="index.html">Home</a>
+            </td>
+
+            <td>
+              <a href="about.html">About</a>
+            </td>
+
+            <td>
+              <a class="active" href="hobby.html">Hobbies</a>
+            </td>
+          </tr>
+        </table>
+
+      </nav>
+
+    </header>
+
+    <!-- main content -->
+    <main>
+
+      <div>
+        <h1><span class="script darkPink">fritzie's</span> HOBBIES</h1>
+      </div>
+
+      <section id="hobbies">
+        
+        <div>
+          <p>Fritzie's hobbies include Pilates and reading.</p>
+          
+          <h2>Reading</h2>
+          <p>Fritzie loves to read and typically reads over 50 books every year. Her favorite book genre is romantasy, which is a blend of romance and fantasy. Her favorite author is the "Blood and Ash" series writer, Jennifer L. Armentrout. She finds it hard to choose a favorite book. Still, some of her top fiction recommendations are "When the Moon Hatched" by Sarah A. Parker and "The House in the Cerulean Sea" by TK Klune. She also loves the biography about Ruth Bader Ginsburg called "The Notorious RBG: The Life and Times of Ruth Bader Ginsburg".</p>
+
+          <div class="grid">
+            <figure>
+              <img src="images/read1.jpeg" alt="Fritzie reading a book">
+              <figcaption>Reading a book with Clementine</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/read2.jpeg" alt="A stack of books to be read">
+              <figcaption>Fritzie's to-be-read pile</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/house.jpg" alt="The House in the Cerulean Sea book cover">
+              <figcaption>One of Fritzie's favorite books</figcaption>
+            </figure>
+          </div>
+
+          <h2>Pilates</h2>
+          <p>When Fritzie isn't enjoying a good book, you might find her at her favorite Pilates studio, Club Pilates! Pilates is a low-impact exercise method developed by Joseph Pilates in the early 20th century to strengthen the body and mind. It focuses on core strength, flexibility, and mindful movement. Through controlled exercises and breathwork, Pilates enhances posture, balance, and overall well-being for all fitness levels.</p>
+
+          <div class="grid">
+            <figure>
+              <img src="images/pilates1.jpeg" alt="Fritzie at Pilates">
+              <figcaption>Fritzie at Club Pilates</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/clubp.png" alt="Club Pilates studio">
+              <figcaption>Club Pilates</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/pilates2.jpeg" alt="Fritzie at Pilates">
+              <figcaption>Fritzie ready to do some Pilates!</figcaption>
+            </figure>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer content -->
+    <footer>
+      <p>&copy; 2025</p>
+    </footer>
+
+    <!-- mobile nav expand/collapse functionality -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('nav img').addEventListener('click', function() {
+          document.querySelector('nav').classList.add('open');
+        });
+      });
+      document.getElementById('collapseMenu').addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('open');
+      });
+    </script>
+  </body>
+</html>

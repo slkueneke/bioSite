@@ -37,7 +37,8 @@ nav {
 h1,
 h2,
 nav a,
-nav span {
+nav span,
+figcaption {
   /* weight 300 - 700 */
   font-family: "Comfortaa", sans-serif;
   color: #2e1605;
@@ -111,6 +112,7 @@ header {
   z-index: 99;
   padding: 1em 1.5em;
 }
+
 /* nav */
 nav {
   width: 98%;
@@ -151,6 +153,7 @@ nav {
   top: -0.16em;
   left: 0.06em;
 }
+
 nav img.mobileOnly {
   cursor: pointer;
 }
@@ -223,6 +226,19 @@ nav td {
 /* main */
 main section {
   padding: 2.5em 2em;
+}
+
+body:not(#home) main {
+    padding-top: 3em;
+}
+
+main > div h1 {
+  text-align: center;
+}
+
+main > div h1 span {
+  font-size: 3.5em;  
+  padding-left:1%;
 }
 
 main section h2 {
@@ -321,7 +337,9 @@ main section p:last-of-type {
 }
 
 /*main section:first-of-type {*/
-#goals {
+#goals,
+#about,
+#hobbies {
   background-color: #f8edeb;
 }
 
@@ -364,6 +382,48 @@ aside h3 {
   display: block;
 }
 
+/* about, hobbies page */
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 5em;
+  row-gap: 5em;
+}
+
+#hobbies .grid {
+  column-gap: 0;
+  row-gap: 0;
+  margin-bottom: 3em;
+}
+
+#hobbies h2 {
+  padding-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#hobbies > div > p {
+  text-align: center;
+}
+
+main section#hobbies p:last-of-type {
+  margin-bottom: 2em;
+}
+
+figure img {
+  border:1px solid #bf614f;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  display: block;
+  width:100%;
+  border-radius: 2em;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
 /* footer */
 footer {
   background-color: #fff;
@@ -374,6 +434,7 @@ footer p {
   text-align: center;
   font-size: 0.8em;
 }
+
 
 /* tablet+ */
 @media all and (min-width: 768px) {
@@ -440,6 +501,10 @@ footer p {
     left: 22%;
   }
 
+  body:not(#home) main {
+    padding-top: 5em;
+  }
+
   main section:not(#banner) {
     padding: 2.5em 2em;
   }
@@ -477,6 +542,15 @@ footer p {
   .sectionContainer > div:first-of-type {
     padding-bottom:unset;
   }
+
+  #hobbies .grid {
+    grid-template-columns: auto auto;
+  }
+
+  figure img {
+    width: unset;
+    height:333px;
+  }
 }
 
 /* small laptop+ */
@@ -484,6 +558,7 @@ footer p {
   #home #banner h1 {
     font-size: 5em;
   }
+
   #photoBg {
     height: 15em;
     width: 15em;
@@ -515,6 +590,14 @@ footer p {
 
   .facts aside li span {
     font-size: 0.9em;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+  }
+
+  #hobbies .grid {
+    grid-template-columns: auto auto auto;
   }
 }
 /* large laptop+ */
@@ -567,8 +650,22 @@ footer p {
   #accomplishments {
     background-color: rgb(252 213 206 / 20%);
   }
+
+  #hobbies,
+  #about,
+  footer { 
+    background-color: transparent;
+  }
 }
 
+/* tiny phones */
+@media screen and (max-width:351px) {
+  body {
+    min-width:425px;
+  }
+}
+
+/*print */
 @media print {
 
   .printOnly {
