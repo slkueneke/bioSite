@@ -555,6 +555,18 @@ footer p {
     background: linear-gradient(#fff, #f8edeb, #fcd5ce, #fff);
     height: 100vh;
   }
+
+  #banner {
+    background-color: rgb(255 255 255 / 20%);
+  }
+
+  #goals {
+    background-color: rgb(248 237 235 / 20%);
+  }  
+
+  #accomplishments {
+    background-color: rgb(252 213 206 / 20%);
+  }
 }
 
 @media print {
