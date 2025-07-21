@@ -26,7 +26,7 @@ p {
 body,
 nav {
   max-width: 1600px;
-  min-width: 425px;
+  /*min-width: 425px;*/
   margin: 0 auto;
 }
 
@@ -116,7 +116,7 @@ nav {
   width: 98%;
   background-color: #ffb5a7;
   border-radius: 5em;
-  margin-top: 1em;
+  margin-top: 0;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -387,6 +387,10 @@ footer p {
 
   .mobileOnly {
     display: none;
+  }
+
+  nav {
+    margin-top:1em;
   }
 
   #home #banner {
