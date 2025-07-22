@@ -439,7 +439,7 @@ footer p {
   font-size: 0.8em;
 }
 
-@media screen and (min-width:425px) and (max-width:767px) {
+@media screen and /*(min-width:425px) and */(max-width:529px) {
 
   #photoBg {
     height: 14em;
@@ -470,11 +470,21 @@ footer p {
     z-index: 2;
   }
 }
-
+@media screen and (min-width:530px) {
+  #photoBg2 {
+    position: absolute;
+    right: 1em;
+    bottom: 3em;
+  }
+  #photoBg3 {
+    left:4%;
+    bottom:-6em;
+  }
+}
 
 
 /* tablet+ */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 687px) {
   .desktopOnly {
     display: block;
   }
