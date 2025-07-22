@@ -235,12 +235,8 @@ main > div h1 span {
   padding-left:1%;
 }
 
-#secondary main h1 span {
+#secondary h1 span {
   font-size: 2.5em;
-}
-
-#secondary main h1 span.smaller {
-  font-size:2em;
 }
 
 main section h2 {
