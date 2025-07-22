@@ -73,7 +73,9 @@ a:hover {
 
 main section > *,
 header section,
-nav {
+nav,
+main #hobbies > *,
+main #about > * {
   margin: 0 auto;
 }
 
@@ -218,12 +220,14 @@ nav td {
 }
 
 /* main */
-main section {
+main section,
+#hobbies,
+#about {
   padding: 2.5em 2em;
 }
 
 body:not(#home) main {
-    padding-top: 3em;
+  padding-top: 3em;
 }
 
 main > div h1 {
@@ -394,6 +398,25 @@ aside h3 {
 
 #hobbies > div > p {
   text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+#about a {
+  font-weight: bold;
+  font-size:1em;
+}
+
+#about a::after {
+  content: '\25B6';
+  font-size: 0.8em;
+  padding-left:0.5em;
+}
+
+#about a:hover {
+  color:#bf614f;
 }
 
 main section#hobbies p:last-of-type {
