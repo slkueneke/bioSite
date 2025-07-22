@@ -26,20 +26,14 @@ p {
 body,
 nav {
   max-width: 1600px;
-  /*min-width: 425px;*/
   margin: 0 auto;
 }
-
-/*nav {
-  min-width: 380px;
-}*/
 
 h1,
 h2,
 nav a,
 nav span,
 figcaption {
-  /* weight 300 - 700 */
   font-family: "Comfortaa", sans-serif;
   color: #2e1605;
 }
@@ -245,6 +239,10 @@ main > div h1 span {
   font-size: 2.5em;
 }
 
+#secondary main h1 span.smaller {
+  font-size:2em;
+}
+
 main section h2 {
   padding-bottom: 1em;
 }
@@ -337,7 +335,6 @@ main section p:last-of-type {
   bottom: -2em;
 }
 
-/*main section:first-of-type {*/
 #goals,
 #about,
 #hobbies {
@@ -436,7 +433,7 @@ footer p {
   font-size: 0.8em;
 }
 
-@media screen and /*(min-width:425px) and */(max-width:529px) {
+/*@media screen and (max-width:529px) {*/
 
   #photoBg {
     height: 14em;
@@ -466,7 +463,7 @@ footer p {
     position: relative;
     z-index: 2;
   }
-}
+/*}*/
 @media screen and (min-width:530px) {
   #photoBg2 {
     position: absolute;
