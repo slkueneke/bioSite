@@ -178,7 +178,7 @@ nav.open img {
 }
 
 nav img.mobileOnly {
-  max-width: 3em;
+  max-width: 2.5em;
   margin-left: 1em;
   vertical-align: middle;
 }
