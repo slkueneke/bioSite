@@ -286,7 +286,7 @@ main section p:last-of-type {
   text-transform: uppercase;
   text-align: center;
   margin-top: -1em;
-  text-shadow:  0 3px #fff;
+  text-shadow: 0 0 3px #fff;
 }
 
 #home #banner h1 span {
